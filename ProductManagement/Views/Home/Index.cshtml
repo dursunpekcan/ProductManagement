@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Ana Sayfa";
+}
+
+<div class="hero-section text-white">
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h1 class="display-4 fw-bold">
+                    Ürünlerinizi Kolayca Yönetin
+                </h1>
+                <p class="lead mt-3">
+                    Tüm ürünlerinizi tek bir panelden ekleyin, düzenleyin ve takip edin.
+                </p>
+
+                <a asp-controller="Products" asp-action="Index"
+                   class="btn btn-light btn-lg mt-4 px-5">
+                    Ürün Listesine Git
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="info-card">
+                <div class="icon-circle bg-primary">📦</div>
+                <h5 class="mt-3">Ürün Yönetimi</h5>
+                <p>
+                    Ürün bilgilerinizi hızlıca ekleyin ve düzenleyin.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="info-card">
+                <div class="icon-circle bg-success">📊</div>
+                <h5 class="mt-3">Takip & Kontrol</h5>
+                <p>
+                    Ürünlerinizi düzenli ve kontrollü bir şekilde yönetin.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="info-card">
+                <div class="icon-circle bg-warning">⚡</div>
+                <h5 class="mt-3">Hızlı İşlem</h5>
+                <p>
+                    Basit arayüz sayesinde işlemlerinizi saniyeler içinde tamamlayın.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="text-center py-4 text-muted">
+    © 2025 Ürün Yönetim Sistemi
+</footer>
