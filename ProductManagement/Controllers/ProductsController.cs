@@ -58,10 +58,12 @@ namespace ProductManagement.Controllers
         {
             if (ModelState.IsValid)
             {
+                product.CreatedDate = DateTime.Now;
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(product);
         }
 
